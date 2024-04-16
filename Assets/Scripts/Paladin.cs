@@ -25,6 +25,19 @@ public class Paladin : MonoBehaviour
             speed += 0.5f;
             animationMutant.SetFloat("Speed", speed);//IMPORTANTE: se debe colocar el nombre correcto del parámetro
         }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            animationMutant.SetBool("IsRunning", true);
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            animationMutant.SetBool("IsRunning", false);
+        }
+        else if (Input.GetKeyDown(KeyCode.Z))
+        {
+            speed -= 0.5f;
+            animationMutant.SetFloat("Speed", speed);
+        }
         else if (Input.GetKeyDown(KeyCode.C))
         {
             num++;
