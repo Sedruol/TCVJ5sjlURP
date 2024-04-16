@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float speedRotation = 5f;
     private Rigidbody rb;
     private Animator animator;
+    private float moveHorizontal = 0f;
+    private float moveVertical = 0f;
     //private CharacterController cc;
     // Start is called before the first frame update
     void Start()
@@ -21,9 +23,8 @@ public class PlayerMovement : MonoBehaviour
     // Usar FixedUpdate cuando usemos fuerzas
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
         //-------------------------
         //Transform.position | Recomendado para objetos que no tienen colisiones, como una camara, un efecto visual o un personaje de un juego donde las colisiones no sean importantes
         //-------------------------

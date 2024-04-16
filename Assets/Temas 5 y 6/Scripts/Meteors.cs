@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Meteors : MonoBehaviour
 {
-    [SerializeField] GameObject meteorite;//prefab del meteoro
-    [SerializeField] float timeCreation;//tiempo que pasará entre cada creación de meteoros
-    [SerializeField] Transform meteoriteParent;//objeto donde almacenaremos todos los meteoros
+    [SerializeField] private GameObject meteorite;//prefab del meteoro
+    [SerializeField] private float timeCreation;//tiempo que pasará entre cada creación de meteoros
+    [SerializeField] private Transform meteoriteParent;//objeto donde almacenaremos todos los meteoros
     private float time = 0f;//tiempo que usaremos de contador
     private Vector3 meteoritePosition;//posicion del meteoro
     [Header("Object Pooling")]

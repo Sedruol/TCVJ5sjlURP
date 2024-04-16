@@ -8,12 +8,13 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] GameObject bullet;//prefab de la bala
     [SerializeField] Transform parentBullet;//objeto donde almacenaremos todas las balas
     [SerializeField] float velocityBullet;//velocidad de las balas
+    private Rigidbody rb;
     [Header("Object Pooling")]
     //object pooling
     [SerializeField] int poolBullets;//cuantas balas creará en un inicio
     [SerializeField] List<GameObject> bullets;//lista para almacenar las balas
     private int existBullet;//cuantas balas existen
-    private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
