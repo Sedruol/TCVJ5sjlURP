@@ -50,7 +50,8 @@ public class PlayerMove : MonoBehaviour
         }
     }
     private void CreateBullets()
-    {//Instantiate(prefab, posicion, rotacion, que sea hijo de este objeto)
+    {
+        //Instantiate(prefab, posicion, rotacion, que sea hijo de este objeto)
         GameObject temp = Instantiate(bullet, inBullet.transform.position, Quaternion.identity, parentBullet);
         temp.GetComponent<Rigidbody>().AddForce(transform.up * velocityBullet);
     }
