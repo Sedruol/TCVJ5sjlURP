@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Temas 5 y 6/Scenes/Movement.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Temas 9 y 10/HUD/hud.unity
+    guid: fb91bf8697053c84cb00941ff7573b76
+  - enabled: 1
+    path: Assets/Temas 9 y 10/HUD/CreateHUD.unity
+    guid: 05f2f67f78b424745be991c66773abbe
   m_configObjects: {}

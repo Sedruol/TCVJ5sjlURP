@@ -8,6 +8,8 @@ public class PlayerMoveV2 : MonoBehaviour
     [SerializeField] GameObject bullet;//prefab de la bala
     [SerializeField] Transform parentBullet;//objeto donde almacenaremos todas las balas
     [SerializeField] float velocityBullet;//velocidad de las balas
+    public static int maxBullets = 10;
+    public static int numBullets = 0;
     public static int playerHP = 100;
     public MeshRenderer meshRenderer;
     public Material material;
@@ -52,6 +54,7 @@ public class PlayerMoveV2 : MonoBehaviour
         //Instantiate(prefab, posicion, rotacion, que sea hijo de este objeto)
         GameObject temp = Instantiate(bullet, inBullet.transform.position, Quaternion.identity, parentBullet);
         temp.GetComponent<Rigidbody>().AddForce(transform.up * velocityBullet);
+
     }
     //Modificadores
     private void OnTriggerEnter(Collider other)

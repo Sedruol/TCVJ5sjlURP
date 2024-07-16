@@ -16,6 +16,7 @@ public class BulletV2 : MonoBehaviour
                 // ... el enemigo sufrirá daño.
                 meteorHP.TakeDamage(damage, other.transform.position);
             }
+            PlayerMoveV2.numBullets--;//numBullets=numBullets-1;
             Destroy(this.gameObject);
         }
     }
